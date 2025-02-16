@@ -24,12 +24,8 @@
 		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Tropical_diseases",
 		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Fungi_of_Europe"];
 		function redirecting() {
-			const randomLink = wikipediaLinks[Math.floor(Math.random() * wikipediaLinks.length)];
-			window.location.href = randomLink;
+			return wikipediaLinks[Math.floor(Math.random() * wikipediaLinks.length)];
 		}
-		document.addEventListener("DOMContentLoaded", function () {
-            		setTimeout(redirecting, 2000); // Delay redirection by 2 seconds after the page load
-        	});
 	</script>
 </head>
 
@@ -38,7 +34,10 @@
 		<h1> Here again? </h1>
 		<p> something bothering you?  </p>
 		<p> Sorry to hear that dude, maybe text a friend of leave urself a voice message </p>
-		<p> If you just want to kill some time, you will be redirected toooo...  </p>
+		<p> If you just want to kill some time, you will be redirected  
+           		 <a id="randomLink" href="#" target="_blank" onclick="this.href = getRandomLink(); return true;">toooo... </a>
+		</p>
+        </p>
         </div>
 	</br>
             <div class="gif">
