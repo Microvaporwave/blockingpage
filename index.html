@@ -27,15 +27,13 @@
 			const randomLink = wikipediaLinks[Math.floor(Math.random() * wikipediaLinks.length)];
 			window.location.href = randomLink;
 		}
+		document.addEventListener("DOMContentLoaded", function () {
+            		setTimeout(redirecting, 2000); // Delay redirection by 2 seconds after the page load
+        	});
 	</script>
 </head>
 
 <body>
-	<script>
-		setTimeout(function(){
-			redirecting();
-		}, 2000);
-	</script>
 	<div class="text">
 		<h1> Here again? </h1>
 		<p> something bothering you?  </p>
