@@ -2,16 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Blocking urself again</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+   	<title>Blocking urself again</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		// Array of Wikipedia category URLs
+        	const wikipediaLinks = [
+        	"https://en.wikipedia.org/wiki/Special:RandomInCategory/Spirituality",
+        	"https://en.wikipedia.org/wiki/Special:RandomInCategory/Meditation",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Dietary_supplements",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Alternative_medicine",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Psychological_theories",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Zen",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Human_sacrifice",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Standard_motorcycles",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Sport_bikes",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Drug_culture",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Entheogens",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Buddhism_in_Japan",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Buddhism_in_India",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Tropical_diseases",
+		"https://en.wikipedia.org/wiki/Special:RandomInCategory/Fungi_of_Europe"];
+		function redirecting() {
+			const randomLink = wikipediaLinks[Math.floor(Math.random() * wikipediaLinks.length)];
+			window.location.href = randomLink;
+		}
+	</script>
 </head>
 
 <body>
 	<div class="text">
-		<h1> literally do anything else </h1>
-		<p> leave urself a voice message or smth </p>
-		<p> read a book </p>
+		<h1> Here again? </h1>
+		<p> something bothering you?  </p>
+		<p> Sorry to hear that dude, maybe text a friend of leave urself a voice message </p>
+		<p> If you just want to kill sometime, you will be redirected toooo...  </p>
         </div>
 	</br>
             <div class="gif">
